@@ -137,7 +137,6 @@ def deepq(env, max_episode_steps, n_experiments, n_total_steps, seed, gamma, lea
 
             # Configure output directory for logging
             # Data logging paths
-            recordingVideo_dir = None
             if isRecordingVideo:
                 recordingVideo_dir = os.path.join(recordingVideo_dir, env_name, test_name, init_time, str(exp))
                 if not os.path.exists(recordingVideo_dir):
@@ -208,6 +207,7 @@ def deepq(env, max_episode_steps, n_experiments, n_total_steps, seed, gamma, lea
             state = state_processor.process(state, sess)  # TODO: DO NOT PROCESS IMAGE TO GRAYSCALE
             state = np.stack([state] * 4, axis=2)  # Sequential images (4 frames)
 
+            video_recorder = None
             if isRenderding and isRecordingVideo and (ep == 0 or ep % rec_per_episodes == 0):
                 video_recorder = VideoRecorder(env,
                                                os.path.join(
