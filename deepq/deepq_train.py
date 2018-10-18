@@ -137,6 +137,7 @@ def deepq(env, max_episode_steps, n_experiments, n_total_steps, seed, gamma, lea
 
             # Configure output directory for logging
             # Data logging paths
+            recordingVideo_dir = None
             if isRecordingVideo:
                 recordingVideo_dir = os.path.join(recordingVideo_dir, env_name, test_name, init_time, str(exp))
                 if not os.path.exists(recordingVideo_dir):
