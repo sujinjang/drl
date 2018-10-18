@@ -11,9 +11,6 @@ import random
 import time
 import itertools
 from collections import namedtuple
-
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
 import numpy as np
 import gym
 import tensorflow as tf
@@ -181,16 +178,7 @@ def deepq(env, max_episode_steps, n_experiments, n_total_steps, seed, gamma, lea
                 action_probs = policy(state, epsilons[0], sess)
                 action = np.random.choice(np.arange(len(action_probs)), p=action_probs)
                 next_state, reward, done, _ = env.step(action)
-                env.render()
-
-                # plt.figure()
-                # plt.imshow(next_state)
-
                 next_state = state_processor.process(next_state, sess)
-
-                # plt.figure()
-                plt.imshow(next_state)
-                plt.show()
 
                 # Append next_state
                 next_state = np.append(state[:, :, 1:], np.expand_dims(next_state, axis=2), axis=2)
