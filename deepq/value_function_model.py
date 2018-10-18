@@ -62,7 +62,7 @@ class ValueEstimator:
                     inputs = tf.layers.conv2d(inputs=inputs, filters=filter_size,
                                               kernel_size=kernel_size,
                                               strides=stride,
-                                              padding="same", activation=tf.nn.relu,
+                                              activation=tf.nn.relu,
                                               name="conv2d_" + str(nLayers))
                     nLayers += 1
 

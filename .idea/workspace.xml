@@ -67,7 +67,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="23219" />
+          <entry key="py" value="23320" />
           <entry key="sh" value="1103" />
         </counts>
       </usages-collector>
@@ -75,14 +75,14 @@
         <counts>
           <entry key="Bash" value="1077" />
           <entry key="PLAIN_TEXT" value="26" />
-          <entry key="Python" value="23219" />
+          <entry key="Python" value="23320" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ipynb" value="5" />
           <entry key="json" value="4" />
-          <entry key="py" value="93" />
+          <entry key="py" value="94" />
           <entry key="sh" value="11" />
           <entry key="txt" value="5" />
         </counts>
@@ -93,7 +93,7 @@
           <entry key="IPNB" value="5" />
           <entry key="JSON" value="4" />
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="93" />
+          <entry key="Python" value="94" />
         </counts>
       </usages-collector>
     </session>
@@ -103,11 +103,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/deepq/deepq_train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="180" column="22" lean-forward="true" selection-start-line="180" selection-start-column="22" selection-end-line="180" selection-end-column="22" />
+            <state relative-caret-position="282">
+              <caret line="203" lean-forward="true" selection-start-line="203" selection-end-line="203" />
               <folding>
                 <element signature="e#16202#16243#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/1147995221/numpy/random/mtrand.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="228" column="4" selection-start-line="228" selection-start-column="4" selection-end-line="228" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -187,7 +196,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ada</find>
       <find>action</find>
       <find>self.action</find>
       <find>isRecordingVideo</find>
@@ -217,6 +225,7 @@
       <find>total_step</find>
       <find>policy</find>
       <find>epsilons</find>
+      <find>Recording</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -249,11 +258,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="720" />
-    <option name="y" value="-4" />
-    <option name="width" value="1187" />
-    <option name="height" value="1084" />
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="53" />
+    <option name="y" value="24" />
+    <option name="width" value="1362" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -291,6 +300,46 @@
               <item name="rl_algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="rl_algorithms" type="462c0819:PsiDirectoryNode" />
               <item name="deepq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rl_algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rl_algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="deepq" type="462c0819:PsiDirectoryNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rl_algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rl_algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="deepq" type="462c0819:PsiDirectoryNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
+              <item name="Breakout-v0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rl_algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rl_algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="deepq" type="462c0819:PsiDirectoryNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
+              <item name="Breakout-v0" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rl_algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rl_algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="deepq" type="462c0819:PsiDirectoryNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
+              <item name="Breakout-v0" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="18-10-2018_14-21-46" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rl_algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rl_algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="deepq" type="462c0819:PsiDirectoryNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
+              <item name="Breakout-v0" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="18-10-2018_14-21-46" type="462c0819:PsiDirectoryNode" />
+              <item name="0" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -508,16 +557,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="53" y="-4" width="1867" height="1084" extended-state="6" />
+    <frame x="53" y="24" width="934" height="1056" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11062907" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.57714283" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286638" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.26778242" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2374477" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32543105" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -609,29 +658,34 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/deepq/deepq_train.py</url>
-          <line>207</line>
-          <option name="timeStamp" value="165" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/deepq/deepq_train.py</url>
-          <line>187</line>
-          <option name="timeStamp" value="174" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/deepq/deepq_train.py</url>
-          <line>189</line>
-          <option name="timeStamp" value="175" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/deepq/deepq_train.py</url>
-          <line>183</line>
-          <option name="timeStamp" value="179" />
+          <line>230</line>
+          <option name="timeStamp" value="181" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>print(np.random.choice(np.arange(2), p=[0.3, 0.7]))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>res = np.random.choice(np.arange(2), p=[0.3, 0.6])</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>res = np.random.choice(np.arange(2), p=[0.1, 0.9])</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>res = np.random.choice(np.arange(2,p=[0.1, 0.9])</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>res = state[:, :, 1:]</expression-string>
         <language-id>Python</language-id>
@@ -654,26 +708,6 @@
       </expression>
       <expression>
         <expression-string>res = process_out_shape[:-1]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>res = process_out_shape[-1:]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>res = np.squeeze(process_out_shape, axis=2)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>np.squeeze(process_out_shape, axis=2)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>res = np.squeeze([80,1,80])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
@@ -750,7 +784,6 @@
     <entry file="file://$PROJECT_DIR$/../resources/cs294-homework/hw2/logz.py" />
     <entry file="file://$PROJECT_DIR$/../resources/openai-gym-policy-gradient/policy_gradient.py" />
     <entry file="file://$USER_HOME$/ml_env/lib/python3.6/site-packages/tensorflow/python/training/training_util.py" />
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/1147995221/numpy/random/mtrand.py" />
     <entry file="file://$USER_HOME$/ml_env/lib/python3.6/site-packages/numpy/lib/shape_base.py" />
     <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/1147995221/numpy/core/umath.py" />
     <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/1147995221/numpy/core/multiarray.py" />
@@ -871,10 +904,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/1147995221/numpy/random/mtrand.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="228" column="4" selection-start-line="228" selection-start-column="4" selection-end-line="228" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/deepq/deepq_train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="180" column="22" lean-forward="true" selection-start-line="180" selection-start-column="22" selection-end-line="180" selection-end-column="22" />
+        <state relative-caret-position="282">
+          <caret line="203" lean-forward="true" selection-start-line="203" selection-end-line="203" />
           <folding>
             <element signature="e#16202#16243#0" />
           </folding>

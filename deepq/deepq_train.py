@@ -207,18 +207,15 @@ def deepq(env, max_episode_steps, n_experiments, n_total_steps, seed, gamma, lea
             state = state_processor.process(state, sess)  # TODO: DO NOT PROCESS IMAGE TO GRAYSCALE
             state = np.stack([state] * 4, axis=2)  # Sequential images (4 frames)
 
+            if isRenderding and isRecordingVideo and (ep == 0 or ep % rec_per_episodes == 0):
+                video_recorder = VideoRecorder(env,
+                                               os.path.join(
+                                                   recordingVideo_dir,
+                                                   "vid_{}_{}_{}_{}.mp4".format(env_name, exp, test_name, ep)),
+                                               enabled=True)
+                print("Recording a video of this episode {} in experiment {}".format(ep, exp))
             # Iterate total n steps of simulation across numerous episodes
             for total_step in range(n_total_steps):
-
-                # Recording videos
-                video_recorder = None
-                if isRenderding and isRecordingVideo and (ep == 0 or ep % rec_per_episodes == 0):
-                    video_recorder = VideoRecorder(env,
-                                                   os.path.join(
-                                                       recordingVideo_dir,
-                                                       "vid_{}_{}_{}_{}.mp4".format(env_name, exp, test_name, ep)),
-                                                   enabled=True)
-                    print("Recording a video of this episode {} in experiment {}".format(ep, exp))
 
                 # Epsilon for this time step
                 epsilon = epsilons[min(total_step, int(exploration_fraction*n_total_steps) - 1)]
@@ -298,6 +295,18 @@ def deepq(env, max_episode_steps, n_experiments, n_total_steps, seed, gamma, lea
                     if ep % checkpt_save_freq == 0 or ep == 0:
                         saver.save(tf.get_default_session(), chckp_dir, global_step=total_step)
 
+                    # Recording videos
+                    if video_recorder:
+                        video_recorder.close()
+                    if isRenderding and isRecordingVideo and (ep == 0 or ep % rec_per_episodes == 0):
+                        video_recorder = VideoRecorder(env,
+                                                       os.path.join(
+                                                           recordingVideo_dir,
+                                                           "vid_{}_{}_{}_{}.mp4".format(env_name, exp, test_name,
+                                                                                        ep)),
+                                                       enabled=True)
+                        print("Recording a video of this episode {} in experiment {}".format(ep, exp))
+
                 else:
                     # Update episode stats
                     episode_reward_sum += reward
@@ -319,14 +328,14 @@ def deepq(env, max_episode_steps, n_experiments, n_total_steps, seed, gamma, lea
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--env_name', type=str, default="PongNoFrameskip-v4")
+    parser.add_argument('--env_name', type=str, default="Breakout-v0") # "PongNoFrameskip-v4"
     parser.add_argument('--max_episode_steps', type=int, default=0)
     parser.add_argument('--n_experiments', type=int, default=1)
     parser.add_argument('--n_total_steps', type=int, default=int(1e7))
     parser.add_argument('--seed', type=int, default=1)
     parser.add_argument('--gamma', type=float, default=0.99)
     parser.add_argument('--learning_rate', type=float, default=1e-4)
-    parser.add_argument('--n_buffer_size', type=int, default=10000)
+    parser.add_argument('--n_buffer_size', type=int, default=50000)
     parser.add_argument('--n_init_buffer_size', type=int, default=5000)
     parser.add_argument('--batch_size', type=int, default=32)
     parser.add_argument('--epsilon_start', type=float, default=1.0)
