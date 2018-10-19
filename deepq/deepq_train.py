@@ -312,6 +312,7 @@ def deepq(env, max_episode_steps, n_experiments, n_total_steps, seed, gamma, lea
                     # Update episode stats
                     episode_reward_sum += reward
                     episode_length += 1
+                    state = next_state
 
             print("===================== End of Last Episode:{} @ step:{} =====================".format(ep, total_step))
 
